@@ -1,0 +1,8 @@
+select[Measures].[Qty]  on columns from [Sales]
+
+select [Measures].[Qty]  on columns from [Sales]
+where [Time Dim].[Time ID].[1]
+
+select [Measures].[Qty]  on columns,
+[Product Dim].[Product ID].allmembers on rows
+from [Sales]
